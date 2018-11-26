@@ -10,8 +10,9 @@ import { registerLanguage } from '../_.contribution';
 const _monaco: typeof monaco = (typeof monaco === 'undefined' ? (<any>self).monaco : monaco);
 
 registerLanguage({
-	id: 'csharp',
-	extensions: ['.cs', '.csx', '.cake'],
-	aliases: ['C#', 'csharp'],
-	loader: () => _monaco.Promise.wrap(import('./csharp'))
+	id: 'typescript',
+	extensions: ['.ts', '.tsx'],
+	aliases: ['TypeScript', 'ts', 'typescript'],
+	mimetypes: ['text/typescript'],
+	loader: () => _monaco.Promise.wrap(<Promise<any>>import('./typescript'))
 });

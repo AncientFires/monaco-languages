@@ -34,6 +34,7 @@ bundleOne('html/html');
 bundleOne('ini/ini');
 bundleOne('pug/pug');
 bundleOne('java/java');
+bundleOne('javascript/javascript');
 bundleOne('less/less');
 bundleOne('lua/lua');
 bundleOne('markdown/markdown');
@@ -51,6 +52,7 @@ bundleOne('scss/scss');
 bundleOne('sql/sql');
 bundleOne('st/st');
 bundleOne('swift/swift');
+bundleOne('typescript/typescript');
 bundleOne('vb/vb');
 bundleOne('xml/xml');
 bundleOne('yaml/yaml');
@@ -64,7 +66,10 @@ bundleOne('csp/csp');
 bundleOne('scheme/scheme');
 bundleOne('clojure/clojure');
 bundleOne('shell/shell');
-bundleOne('perl/perl')
+bundleOne('perl/perl'),
+bundleOne('powerquery/powerquery')
+bundleOne('azcli/azcli')
+bundleOne('apex/apex');
 
 function bundleOne(moduleId, exclude) {
 	requirejs.optimize({

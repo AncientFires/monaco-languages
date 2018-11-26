@@ -10,8 +10,8 @@ import { registerLanguage } from '../_.contribution';
 const _monaco: typeof monaco = (typeof monaco === 'undefined' ? (<any>self).monaco : monaco);
 
 registerLanguage({
-	id: 'csharp',
-	extensions: ['.cs', '.csx', '.cake'],
-	aliases: ['C#', 'csharp'],
-	loader: () => _monaco.Promise.wrap(import('./csharp'))
+	id: 'powerquery',
+	extensions: ['.pq', '.pqm'],
+	aliases: ['PQ', 'M', 'Power Query', 'Power Query M'],
+	loader: () => _monaco.Promise.wrap(import('./powerquery'))
 });

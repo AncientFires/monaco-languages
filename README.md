@@ -4,6 +4,8 @@ Colorization and configuration supports for multiple languages for the Monaco Ed
 
 ![monaco-languages](https://cloud.githubusercontent.com/assets/5047891/15938606/1fd4bac6-2e74-11e6-8839-d455da8bc8a7.gif)
 
+* apex
+* azcli
 * bat
 * clojure
 * coffee script
@@ -17,6 +19,7 @@ Colorization and configuration supports for multiple languages for the Monaco Ed
 * html
 * ini
 * java
+* javascript
 * lua
 * markdown
 * msdax
@@ -38,6 +41,7 @@ Colorization and configuration supports for multiple languages for the Monaco Ed
 * sql
 * st
 * swift
+* typescript
 * vb
 * xml
 * yaml
@@ -61,7 +65,7 @@ This npm module is bundled and distributed in the [monaco-editor](https://www.np
 * initial setup with `npm install .`
 * compile with `npm run watch`
 * test with `npm run test`
-* bundle with `npm run prepublish`
+* bundle with `npm run prepublishOnly`
 
 ## Dev: Adding a new language
 
